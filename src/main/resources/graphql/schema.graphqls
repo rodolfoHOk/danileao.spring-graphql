@@ -1,0 +1,12 @@
+type Mutation {
+    addCategory(category: CategoryInput): Category
+}
+
+input CategoryInput {
+    name: String!
+}
+
+type Category {
+    name: String
+    id: ID!
+}
