@@ -10,3 +10,7 @@ type Category {
     name: String
     id: ID!
 }
+
+type Query {
+    categoryById(id: ID): Category
+}
